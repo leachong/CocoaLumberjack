@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030727A91DDC616A00E73D0D /* libCocoaLumberjack.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18F3BFD71A81E06E00692297 /* libCocoaLumberjack.a */; };
+		030727AA1DDC61DE00E73D0D /* CocoaLumberjack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5D89BA41994749300C180CF /* CocoaLumberjack.h */; };
+		030727AB1DDC61DE00E73D0D /* DDLogMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5D89BA61994749300C180CF /* DDLogMacros.h */; };
+		030727AC1DDC61DE00E73D0D /* DDAssertMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E5D89BA51994749300C180CF /* DDAssertMacros.h */; };
+		030727AD1DDC61DE00E73D0D /* DDLegacyMacros.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E58079621A032F92008819CA /* DDLegacyMacros.h */; };
+		030727AE1DDC61DE00E73D0D /* DDLog+LOGV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20C7192A0E0000AB7171 /* DDLog+LOGV.h */; };
+		030727AF1DDC61DE00E73D0D /* DDAbstractDatabaseLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20BD192A0E0000AB7171 /* DDAbstractDatabaseLogger.h */; };
+		030727B01DDC61DE00E73D0D /* DDASLLogCapture.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20BF192A0E0000AB7171 /* DDASLLogCapture.h */; };
+		030727B11DDC61DE00E73D0D /* DDASLLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20C1192A0E0000AB7171 /* DDASLLogger.h */; };
+		030727B21DDC61DE00E73D0D /* DDFileLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20C3192A0E0000AB7171 /* DDFileLogger.h */; };
+		030727B31DDC61DE00E73D0D /* DDLog.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20C5192A0E0000AB7171 /* DDLog.h */; };
+		030727B41DDC61DE00E73D0D /* DDTTYLogger.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA9C20C8192A0E0000AB7171 /* DDTTYLogger.h */; };
+		030727B51DDC61DE00E73D0D /* CLIColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 93483CFA1D09E39000AD40D6 /* CLIColor.h */; };
+		030727B61DDC61EB00E73D0D /* CocoaLumberjack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18F3BF151A81D9A400692297 /* CocoaLumberjack.h */; };
+		030727B71DDC61EB00E73D0D /* CocoaLumberjackSwift.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55F88BF71B3CB15C00E31255 /* CocoaLumberjackSwift.h */; };
 		18F3BF081A81D8B700692297 /* CocoaLumberjack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCB5C619D4BB6E0096E784 /* CocoaLumberjack.swift */; };
 		18F3BF0A1A81D8B700692297 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB3185114EB418E001CFBEE /* CocoaLumberjack.framework */; };
 		18F3BF161A81D9A400692297 /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F3BF151A81D9A400692297 /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -272,6 +287,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		030727A71DDC614900E73D0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/../build/ios/lib";
+			dstSubfolderSpec = 0;
+			files = (
+				030727A91DDC616A00E73D0D /* libCocoaLumberjack.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030727A81DDC614C00E73D0D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PROJECT_DIR)/../build/ios/include/CocoaLumberjack";
+			dstSubfolderSpec = 0;
+			files = (
+				030727B61DDC61EB00E73D0D /* CocoaLumberjack.h in CopyFiles */,
+				030727B71DDC61EB00E73D0D /* CocoaLumberjackSwift.h in CopyFiles */,
+				030727AA1DDC61DE00E73D0D /* CocoaLumberjack.h in CopyFiles */,
+				030727AB1DDC61DE00E73D0D /* DDLogMacros.h in CopyFiles */,
+				030727AC1DDC61DE00E73D0D /* DDAssertMacros.h in CopyFiles */,
+				030727AD1DDC61DE00E73D0D /* DDLegacyMacros.h in CopyFiles */,
+				030727AE1DDC61DE00E73D0D /* DDLog+LOGV.h in CopyFiles */,
+				030727AF1DDC61DE00E73D0D /* DDAbstractDatabaseLogger.h in CopyFiles */,
+				030727B01DDC61DE00E73D0D /* DDASLLogCapture.h in CopyFiles */,
+				030727B11DDC61DE00E73D0D /* DDASLLogger.h in CopyFiles */,
+				030727B21DDC61DE00E73D0D /* DDFileLogger.h in CopyFiles */,
+				030727B31DDC61DE00E73D0D /* DDLog.h in CopyFiles */,
+				030727B41DDC61DE00E73D0D /* DDTTYLogger.h in CopyFiles */,
+				030727B51DDC61DE00E73D0D /* CLIColor.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		18F3BFD21A81DFEC00692297 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,7 +334,7 @@
 		};
 		18F3BFD51A81E06E00692297 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
@@ -305,7 +353,7 @@
 				620EEE801BFA65CE00D1B9CB /* DDDispatchQueueLogFormatter.h in CopyFiles */,
 				620EEE811BFA65CE00D1B9CB /* DDMultiFormatter.h in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		19190F151B84DBCE008D059E /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -991,6 +1039,8 @@
 				18F3BFD31A81E06E00692297 /* Sources */,
 				18F3BFD41A81E06E00692297 /* Frameworks */,
 				18F3BFD51A81E06E00692297 /* CopyFiles */,
+				030727A71DDC614900E73D0D /* CopyFiles */,
+				030727A81DDC614C00E73D0D /* CopyFiles */,
 			);
 			buildRules = (
 			);
