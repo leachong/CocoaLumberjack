@@ -70,6 +70,7 @@
 // Main macros
 #import "DDLogMacros.h"
 #import "DDAssertMacros.h"
+#import "DDLogMacrosCus.h"
 
 // Capture ASL
 #import "DDASLLogCapture.h"
