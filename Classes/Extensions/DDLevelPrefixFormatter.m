@@ -30,6 +30,27 @@
         default                : logLevel = @"U"; break;
     }
     NSString *dateString = logMessage->_timestamp == nil ? @"" : [_DateFormatter stringFromDate:logMessage->_timestamp];
-    return [NSString stringWithFormat:@"%@ @%@|%@|%@", dateString, logMessage->_queueLabel, logLevel, logMessage->_message];
+    
+    
+    NSString* queueStr = @"";
+    if (_HasQueueLabel) {
+        queueStr = [NSString stringWithFormat:@" | %@", logMessage->_queueLabel];
+    }
+    NSString* fileNameStr = @"";
+    if (_HasFileName) {
+        fileNameStr = [NSString stringWithFormat:@" | %@", logMessage->_fileName];
+    }
+    NSString* messageStr = @"";
+    if (_HasQueueLabel || _HasFileName) {
+        messageStr = [NSString stringWithFormat:@" | %@", logMessage->_message];
+    } else {
+        messageStr = [NSString stringWithFormat:@" %@", logMessage->_message];
+    }
+    
+    NSString* tmp = [NSString stringWithFormat:@"%@ [%@]%@%@%@", dateString, logLevel, queueStr, fileNameStr, messageStr];
+    
+//    NSLog(tmp);
+    
+    return tmp;
 }
 @end

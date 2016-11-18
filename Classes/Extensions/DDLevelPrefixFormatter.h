@@ -19,4 +19,7 @@
 @interface DDLevelPrefixFormatter : NSObject <DDLogFormatter>
 
 @property (nonatomic, strong) NSDateFormatter *DateFormatter;
+
+@property (nonatomic, assign) bool HasQueueLabel;
+@property (nonatomic, assign) bool HasFileName;
 @end
